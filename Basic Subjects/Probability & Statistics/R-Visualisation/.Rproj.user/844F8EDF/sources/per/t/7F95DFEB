@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1638933885669.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1176979603",
+    "id" : "7F95DFEB",
+    "lastKnownWriteTime" : 1638938822,
+    "last_content_update" : 1638938822824,
+    "path" : "~/OneDrive - Hanoi University of Science and Technology/University/Basic Subjects/Probability & Statistics/ProbStat/SampleDistribution-Exponential.R",
+    "project_path" : "SampleDistribution-Exponential.R",
+    "properties" : {
+        "cursorPosition" : "6,37",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
