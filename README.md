@@ -8,7 +8,7 @@ Mistakes may happen, but I always hope my documents may help you at some points.
 
 ---
 My digital notebooks, you may find in-class notes and exercises solutions, please use it at your own risk and pardon my mistakes:
-- Semester 20211 (Calculus III, Technical Writing & Presentationl, Probability & Statistics, and Fundamentals of Optimisation): [Link](https://husteduvn-my.sharepoint.com/:o:/g/personal/vu_hl204897_sis_hust_edu_vn/EruFqSl7vBtBgnu_KSFq3soB_C31MideLedEXqivguSzEg?e=QhV4Et)
+- Semester 20211 (Calculus III, Technical Writing & Presentation, Probability & Statistics, and Fundamentals of Optimisation): [Link-20211](https://husteduvn-my.sharepoint.com/:o:/g/personal/vu_hl204897_sis_hust_edu_vn/EruFqSl7vBtBgnu_KSFq3soB_C31MideLedEXqivguSzEg?e=QhV4Et)
 
 In each subfolder, you may find the following files (not necessarily those exact files, depending how lazy I was at the time I organised them):
 - References: You may find important text books (mostly in English, and some Vietnamese stuff) and their solutions if you are lucky enough.
