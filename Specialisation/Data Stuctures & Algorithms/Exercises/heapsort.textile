@@ -1,0 +1,314 @@
+# Exercise 1
+Original: A = [10, 26, 52, 76, 13, 8, 3, 33, 60, 42] -> i = 5 -> A[5] = 13
+
+Step 1: Heapify(A, 5): 42 > 13 	-> Swap(A, 5, 10) 
+-> A = [10, 26, 52, 76, 42, 8, 3, 33, 60, 13]  # swap 42 and 13
+
+Step 2: Heapify(A, 4): 76 > 33 and 76 > 60  
+-> A = [10, 26, 52, 76, 42, 8, 3, 33, 60, 13]
+
+Step 3: Heapify(A, 3): 52 > 8 and 52 > 3
+-> A = [10, 26, 52, 76, 42, 8, 3, 33, 60, 13]
+
+Step 4: Heapify(A, 2): 26 < 76 and 26 < 42 -> Swap(A, 2, 4)
+-> A = [10, 76, 52, 26, 42, 8, 3, 33, 60, 13]
+
+	Step 5: Heapify(A, 4):  26 < 33 and 26 < 60 -> Swap(A, 4, 9)
+	-> A = [10, 76, 52, 60, 42, 8, 3, 33, 26, 13]
+
+	Step 6: Heapify(A, 9): Nothing happens (leaf node)
+	-> A = [10, 76, 52, 60, 42, 8, 3, 33, 26, 13]
+
+Step 7: Heapify(A, 1): 10 < 76 and 10 < 52 -> Swap(A, 1, 2)
+-> A = [76, 10, 52, 60, 42, 8, 3, 33, 26, 13]
+	
+	Step 8: Heapify(A, 2): 10 < 60 and 10 < 42 -> Swap(A, 2, 4)
+	-> A = [76, 60, 52, 10, 42, 8, 3, 33, 26, 13]
+
+	Step 9: Heapify(A, 4): 10 < 33 and 10  < 26 -> Swap(A, 4, 8)
+	-> A = [76, 60, 52, 33, 42, 8, 3, 10, 26, 13]
+
+	Step 10: Heapify(A, 8): Nothing happens (leaf node)
+
+Final: A = [76, 60, 52, 33, 42, 8, 3, 10, 26, 13]
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 2
+This is not a heap
+Original: [23,17,14,6,13,10,1,5,7,12]
+Final: [23,17,14,7,13,10,1,5,6,12]  # swap 7 and 6
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 3
+Original: A = [12, 28, 36, 1, 37, 13, 4, 25, 3] -> i = 4 -> A[4] = 1
+Execute heapify(arr, 4), swap(A, 4, 8)
+12 28 36 25 37 13 4 1 3 
+Execute heapify(arr, 2), swap(A, 2, 5)
+12 37 36 25 28 13 4 1 3 
+Execute heapify(arr, 1), swap(A, 1, 2)
+37 12 36 25 28 13 4 1 3 
+Execute heapify(arr, 2), swap(A, 2, 5)
+37 28 36 25 12 13 4 1 3 
+
+Final: [37, 28, 36, 25, 12, 13, 4, 1, 3]
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 4
+A = [12, 28, 4, 37]
+heap_size = 4
+Heapsort(A) {
+	BuildHeap(A) {
+		Heapify(A, 2): 28 < 37 -> Swap(A, 2, 4)
+		-> A = [12, 37, 4, 28]
+		Heapify(A, 1): 12 < 37 -> Swap(A, 1, 2)
+		-> A = [37, 12, 4, 20]
+		Heapify(A, 2): 12 < 20 -> Swap(A, 2, 4)
+		-> A = [37, 28, 4, 12]
+	}
+	A = [37, 20, 4, 12]
+	Loop {
+		i = 4: { 
+			Swap(A, 1, 4) -> A = [12, 28, 4, 37]
+			heap_size = 3
+			Heapify(A, 1): 12 < 28 -> Swap(A, 1, 2)
+			-> A = [28, 12, 4, 37]
+			Heapify(A, 2): Nothing happens
+		}
+		A = [28, 12, 4, 37]
+		i = 3 {
+			Swap(A, 1, 3) -> A = [4, 12, 28, 37]
+			heap_size = 2
+			Heapify(A, 1): 4 < 12 -> Swap(A, 1, 2)
+			-> A = [12, 4, 28, 37]
+			Heapify(A, 2): Nothing happens
+		}
+		A = [12, 4, 28, 37]
+		i = 2 {
+			Swap(A, 1, 2) -> A = [4, 12, 28, 37]
+			heap_size = 1
+			Heapify(A, 1): Nothing happens
+		}
+		A = [4, 12, 28, 37]
+	}
+}
+Final: A = [4, 12, 28, 37]
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 5
+Original: A = [25, 67, 56, 32, 12, 96, 82, 44] -> i = 4
+
+# BuildHeap
+A = [25, 67, 56, 44, 12, 96, 82, 32]  # i = 4
+A = [25, 67, 96, 44, 12, 56, 82, 32]  # i = 3
+A = [25, 67, 96, 44, 12, 56, 82, 32]  # i = 2
+A = [96, 67, 82, 44, 12, 56, 25, 32]  # i = 1
+
+# Loop
+i = 8: Swap 96 and 32
+	Heapify(A, 1) -> A = [82, 67, 56, 44, 12, 32, 25]
+	Moved: 96
+i = 7: Swap 82 and 25
+	Heapify -> A = [67, 44, 56, 25, 12, 32]
+	Moved: 82, 96
+i = 6: Swap 67 and 32
+	Heapify -> A = [56, 44, 32, 25, 12]
+	Moved: 67, 82, 96
+i = 5: Swap 56 and 12
+	Heapify -> A = [44, 25, 32, 12]
+	Moved: 56, 67, 82, 96
+i = 4: Swap 44 and 12
+	Heapify: [32, 25, 12]
+	Moved: 44, 56, 67, 82, 96
+i = 3: Swap 32 and 12
+	Heapify: [25, 12]
+	Moved: 32, 44, 56, 67, 82, 96
+i = 2: Swap 25 and 12
+	Heapify: 12
+	Moved: 25, 32, 44, 56, 67, 82, 96
+
+-> Sorted: 12, 25, 32, 44, 56, 67, 82, 96
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 6
+Assume the root node is at height 0. t
+- The number of elements in a heap is MINIMUM when there is only one node in the
+leftmost branch 
+-> Total = 2^h - 1 + 1 = 2^h
+- The number of elements in a heap is MAXIMUM when the heap is a full binary tree
+-> Total = 2^(h+1) - 1
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 7
+The smallest element in a heap should reside on the height of the leaf nodes.
+-> The element should be A[i], where floor(n/2) + 1 <= i <= n
+(n is the heap size)
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 8
+Yes, a reverse-ordered array is a heap, as for any index i in the array, we have
+A[i] >= A[2i] and A[i] >= A[2i+1], which suffices the heap properties.
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 9
+A = [15, 13, 9, 5, 12, 8, 7, 4, 0, 6, 2, 1]
+Insert(A, 3)
+	heap_size = 12 + 1 = 13
+	A[13] = 3
+	i = 13
+	A[parent(i)] = A[6] > A[13] = 3 -> End while loop
+Final: A = [15, 13, 9, 5, 12, 8, 7, 4, 0, 6, 2, 1, 3]
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 10
+A = [15, 13, 9, 5, 12, 8, 7, 4, 0, 6, 2, 1]
+ExtractMax(A) {
+	max = A[1] = 15
+	A[1] = A[heap_size] = 1
+	heap_size = 12 - 1 = 11
+	A = [1, 13, 9, 5, 12, 8, 7, 4, 0, 6, 2]
+	Heapify(A, 1) {
+		A = [13, 12, 9, 5, 6, 8, 7, 4, 0, 1, 2] 
+	}
+}
+Final: max = 15
+	   A = [13, 12, 9, 5, 6, 8, 7, 4, 0, 1, 2] 
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 11
+## Ex 11.1
+Parent(i) = round(i/3)
+Left_child(i) = 3i - 1
+Mid_child(i) = 3i
+Right_child(i) = 3i + 1
+
+## Ex 11.2
+
+## Ex 11.3
+Heapify(A, i)
+l = Left_child(i)
+m = Mid_child(i)
+r = Right_child(i)
+if (l <= heap_size and A[l] > A[i]):
+	largest = l
+else:
+	largest = i
+
+if (m <= heap_size and A[m] > A[largest]):
+	largest = m
+
+if (r <= heap_size and A[r] > A[largest]):
+	largest = r
+
+if largest != i:
+	Swap(A, i, largest)
+	Heapify(A, largest)
+
+## Ex 11.4
+ExtractMax(A)
+	max = A[1]
+	A[1] = heap_size
+	heap_size -= 1
+	Heapify(A, 1)
+	return max
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 12
+// Min-priority queue -> Element enqueued later will have HIGHER priority,
+thus will be dequeued LATER
+class item(value, priority=0):
+	self.value = value
+	self.priority = priority
+priority = 0
+def enqueue(value):
+	item.value = value
+	priority += 1
+	item.priority = priority
+	Insert(Q, item)
+def dequeue(value):
+	extract_max(Q)  
+
+-> Both operations run in O(logn)
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 13
+// Max-priority queue
+class item(value, priority=0):
+	self.value = value
+	self.priority = priority
+priority = 0
+def push(value):
+	item.value = value
+	priority += 1
+	item.priority = priority
+	Insert(S, item)
+def pop():
+	extract_max(S)
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 16
+Heapify(A, i):
+while True:
+	l = Left(i); r = Right(i);
+	if l <= heap_size(A) and A[l] > A[i]:
+		largest = l
+	else:
+		largest = i
+	if r <= heap_size(A) and A[r] > A[largest]:
+		largest = r
+
+	if largest != i:
+		swap(A[i], A[largest])
+		i = largest
+	else:
+		break
+
+##-----------------------------------------------------------------------------##
+
+# Exercise 17
+
+A = [3, 15, 2, 29, 6, 14, 25, 7, 5]
+Heapsort(A) {
+	heap_size = 9
+	BuildHeap(A) {
+		mid = floor(9/2) = 4 -> A[4] = 29
+		Heapify(A, 4): Nothing happens
+		-> A = [3, 15, 2, 29, 6, 14, 25, 7, 5]
+		Heapify(A, 3): 2 < 25 -> Swap A[3] and A[7]
+		-> A = [3, 15, 25, 29, 6, 14, 2, 7, 5]
+		Heapify(A, 2): 15 < 29 -> Swap A[2] and A[4]
+		-> A = [3, 29, 25, 15, 6, 14, 2, 7, 5]
+		Heapify(A, 1): 3 < 20 -> Swap A[1] and A[2]
+		-> A = [29, 3, 25, 15, 6, 14, 2, 7, 5]
+		Heapify(A, 2): 3 < 15 -> Swap A[2] and A[4]
+		-> A = [29, 15, 25, 3, 6, 14, 2, 7, 5]
+	}
+
+	for i = 9 {
+		Swap(A, 1, 9)
+		heap_size --
+		Heapify(A, 1)
+	}
+	.
+	.
+	.
+}
+
+Final: A = [2, 3, 5, 6, 7, 15, 16, 25, 29]
+
+
+
+
+
