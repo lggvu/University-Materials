@@ -1,4 +1,7 @@
 # University-Materials
+My digital notebooks, you may find in-class notes and exercises solutions, please use it at your own risk and pardon my mistakes:
+- Semester 20211 (Calculus III, Technical Writing & Presentationl, Probability & Statistics, and Fundamentals of Optimisation): [https://husteduvn-my.sharepoint.com/personal/vu_hl204897_sis_hust_edu_vn/_layouts/OneNote.aspx?id=%2Fpersonal%2Fvu_hl204897_sis_hust_edu_vn%2FDocuments%2F20211
+onenote:https://husteduvn-my.sharepoint.com/personal/vu_hl204897_sis_hust_edu_vn/Documents/20211/]
 In each subfolder, you may find the following files (not necessarily those exact files, depending how lazy I was at the time I organised them):
 - References: You may find important text books (mostly in English, and some Vietnamese stuff) and their solutions if you are lucky enough.
 - Slides - [Prof name]: Lecture slides (used at the time I uploaded), OWNED BY THE PROFESSORS.
