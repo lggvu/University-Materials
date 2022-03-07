@@ -2,10 +2,10 @@
 ---
 HUST, DSAI - K65
 ---
-For those who always seek and wonder what you might learn in the next semester, or those who are in trouble at any subject. 
-Mistakes may happen, but I always hope my documents may help you at some points. 
+*For those who always seek and wonder what you might learn in the next semester, or those who are in trouble at any subject. 
+Mistakes may happen, but I always hope my documents may help you at some points.* 
 
-Hanoi, 2022.
+*Hanoi, 2022.*
 
 
 My digital notebooks, you may find in-class notes and exercises solutions, please use it at your own risk and pardon my mistakes:
