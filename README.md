@@ -1,13 +1,12 @@
 # University-Materials
 ## HUST, DSAI - K65
 
----
 *For those who always seek and wonder what you might learn in the next semester, or those who are in trouble at any subject. 
 Mistakes may happen, but I always hope my documents may help you at some points.* 
 
 *Hanoi, 2022.*
----
 
+---
 My digital notebooks, you may find in-class notes and exercises solutions, please use it at your own risk and pardon my mistakes:
 - Semester 20211 (Calculus III, Technical Writing & Presentationl, Probability & Statistics, and Fundamentals of Optimisation): [Link](https://husteduvn-my.sharepoint.com/:o:/g/personal/vu_hl204897_sis_hust_edu_vn/EruFqSl7vBtBgnu_KSFq3soB_C31MideLedEXqivguSzEg?e=QhV4Et)
 
