@@ -16,3 +16,11 @@ In each subfolder, you may find the following files (not necessarily those exact
 - Slides (Annotated): The same lecture slides, but with some ugly handwritten notes, annotated by me, please read my annotations at your own risk, sometimes I, myself, am surprised at how stupid I was when I check those notes back.
 - Reviews: Some old tests and short exercises, maybe helpful for you to review your knowledge, or just to realise how desperate you are when you have studied no sh*t and the exam is due tomorrow.
 - Notebook: My ugly handwritten notebook, owned by me, and please use it at your own risk.
+
+---
+Some **Notion** notebooks that might interest you:
+- Data Structures & Algorithm recap: [Link-DSA](https://lggvu.notion.site/191d7b4986f54db1a5d1d6669b17a011?v=666c39772a3544ad8aa3909ca6769093)
+- Introduction to AI recap: [Link-AI](https://lggvu.notion.site/c86c6e133cda4471a4e431b265934e5e?v=111232a7d2c34fd3a71193c8eaf10862)
+- (Vietnamese) Kinh tế chính trị Marx-Lenin: [Link-KTCT](https://lggvu.notion.site/KINH-T-CH-NH-TR-SSH1121-dd2703c3e5ae4e21b8e6629e314a954e)
+
+HUST GPA Calculator (Notion link + *Vietnamese* Manual included): *Updating*
